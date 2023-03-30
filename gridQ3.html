@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .continer{
+    display: grid;
+    grid-template-areas:
+    'header header header header header'
+    'aside nav nav nav nav'
+    'aside section section section section'
+    'aside section section section section'
+    'footer footer footer footer footer' ;
+    gap:5px;
+    height: 98vh;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    grid-area: header;
+    color: white;
+    background: rgb(58, 57, 57);
+
+    align-items: center;
+}
+
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #FF7755;
+    color: black;
+    align-items: center;
+    width: 300px;
+}
+
+aside >div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gainsboro;
+    width: 200px;
+    height: 80px;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    background: #FF7755;
+    color: white;
+   
+    align-items: center;
+}
+
+section{
+    grid-area: section;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
+    background: lightgray;
+}
+
+.articleItem{
+    background: white;
+    margin: 10px;
+    font-size: 12px;
+    padding: 10px 10px 10px 10px;
+}
+
+footer{
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+    background:rgb(58, 57, 57);
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="continer">
+       <header>
+            <div style="padding-left: -15px; font-weight: bold; font-size: large;">Header Logo</div>
+            <div>header one</div>
+            <div>header two</div>
+            <div>header three</div>
+            <div>header four</div>
+        </header>
+        <nav>
+            <div>LATEST ARTICLE</div>
+            <div>MOST VIEWS</div>
+            <div>FEATURED</div>
+        </nav>
+   
+  
+        <aside>
+            <div>Placeholder for image</div>
+            <div>box1</div>
+            <div>box2</div>
+            <div>box3</div>
+        </aside>
+        <section>
+            <div class="articleItem"><center><b>Article Title</b> </center><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo et fuga inventore ea rerum tempore deleniti, sapiente odit deserunt nam laudantium dolorum corrupti quis at tenetur molestias quasi assumenda. Tenetur?</div>
+            <div class="articleItem"><center><b>Article Title</b> </center><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo et fuga inventore ea rerum tempore deleniti, sapiente odit deserunt nam laudantium dolorum corrupti quis at tenetur molestias quasi assumenda. Tenetur?</div>
+            <div class="articleItem"><center><b>Article Title</b> </center><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo et fuga inventore ea rerum tempore deleniti, sapiente odit deserunt nam laudantium dolorum corrupti quis at tenetur molestias quasi assumenda. Tenetur?</div>
+            <div class="articleItem"><center><b>Article Title</b> </center><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo et fuga inventore ea rerum tempore deleniti, sapiente odit deserunt nam laudantium dolorum corrupti quis at tenetur molestias quasi assumenda. Tenetur?</div>
+            <div class="articleItem"><center><b>Article Title</b> </center><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo et fuga inventore ea rerum tempore deleniti, sapiente odit deserunt nam laudantium dolorum corrupti quis at tenetur molestias quasi assumenda. Tenetur?</div>
+            <div class="articleItem"><center><b>Article Title</b> </center><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo et fuga inventore ea rerum tempore deleniti, sapiente odit deserunt nam laudantium dolorum corrupti quis at tenetur molestias quasi assumenda. Tenetur?</div>
+            <div class="articleItem"><center><b>Article Title</b> </center><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo et fuga inventore ea rerum tempore deleniti, sapiente odit deserunt nam laudantium dolorum corrupti quis at tenetur molestias quasi assumenda. Tenetur?</div>
+            <div class="articleItem"><center><b>Article Title</b> </center><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo et fuga inventore ea rerum tempore deleniti, sapiente odit deserunt nam laudantium dolorum corrupti quis at tenetur molestias quasi assumenda. Tenetur?</div>
+            <div class="articleItem"><center><s>Article Title</s> </center><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo et fuga inventore ea rerum tempore deleniti, sapiente odit deserunt nam laudantium dolorum corrupti quis at tenetur molestias quasi assumenda. Tenetur?</div>
+            <div class="articleItem"><center><b>Article Title</b> </center><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo et fuga inventore ea rerum tempore deleniti, sapiente odit deserunt nam laudantium dolorum corrupti quis at tenetur molestias quasi assumenda. Tenetur?</div>
+            <div class="articleItem"><center><b>Article Title</b> </center><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo et fuga inventore ea rerum tempore deleniti, sapiente odit deserunt nam laudantium dolorum corrupti quis at tenetur molestias quasi assumenda. Tenetur?</div>
+            <div class="articleItem"><center><b>Article Title</b> </center><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo et fuga inventore ea rerum tempore deleniti, sapiente odit deserunt nam laudantium dolorum corrupti quis at tenetur molestias quasi assumenda. Tenetur?</div>
+        </section>
+        <footer>
+            Lorem ipsum dolor sit.
+        </footer>
+  
+    </div>
+</body>
+</html>
